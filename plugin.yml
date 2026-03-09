@@ -1,0 +1,60 @@
+name: iConomyBedrock
+version: 1.0.0
+main: icrafts\iconomybedrock\iConomyBedrock
+api: 5.0.0
+author: iCrafts
+description: iConomy-style economy for PocketMine-MP Bedrock
+
+commands:
+  money:
+    description: Controls account balances and more
+    usage: "/money help"
+    aliases: [bal, balance]
+    permission: iconomy.access
+  bank:
+    description: Bank account operations
+    usage: "/bank help"
+    permission: iconomy.bank.access
+  icoimport:
+    description: Import command placeholder
+    usage: "/icoimport"
+    permission: iconomy.admin
+
+permissions:
+  iconomy.access:
+    default: true
+  iconomy.payment:
+    default: true
+  iconomy.rank:
+    default: true
+  iconomy.list:
+    default: op
+  iconomy.bank.access:
+    default: true
+  iconomy.bank.deposit:
+    default: true
+  iconomy.bank.withdraw:
+    default: true
+  iconomy.bank.transfer:
+    default: true
+
+  iconomy.admin:
+    default: op
+  iconomy.admin.account.create:
+    default: op
+  iconomy.admin.account.remove:
+    default: op
+  iconomy.admin.reset:
+    default: op
+  iconomy.admin.empty:
+    default: op
+  iconomy.admin.purge:
+    default: op
+  iconomy.admin.stats:
+    default: op
+  iconomy.admin.grant:
+    default: op
+  iconomy.admin.hide:
+    default: op
+  iconomy.admin.set:
+    default: op

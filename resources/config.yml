@@ -1,0 +1,25 @@
+system:
+  storage:
+    type: local
+    mysql:
+      host: 127.0.0.1
+      port: 3306
+      database: icrafts
+      username: root
+      password: ""
+      table: iconomy_accounts
+  default:
+    currency:
+      major:
+        single: iКоин
+        plural: iКоины
+    account:
+      holdings: 30.0
+      bank_holdings: 0.0
+  formatting:
+    prefix: "&f[&6iCrafts&f] &f"
+    decimals: 2
+  banking:
+    enabled: true
+  top:
+    default_count: 10
